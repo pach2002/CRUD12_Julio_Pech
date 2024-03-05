@@ -1,0 +1,12 @@
+C:\Users\julio\OneDrive\Documentos\TravelAgency\CRUD12_Julio_Pech\Travels.Api\Travels.ApplicationServices\bin\Debug\net8.0\Travels.ApplicationServices.deps.json
+C:\Users\julio\OneDrive\Documentos\TravelAgency\CRUD12_Julio_Pech\Travels.Api\Travels.ApplicationServices\bin\Debug\net8.0\Travels.ApplicationServices.dll
+C:\Users\julio\OneDrive\Documentos\TravelAgency\CRUD12_Julio_Pech\Travels.Api\Travels.ApplicationServices\bin\Debug\net8.0\Travels.ApplicationServices.pdb
+C:\Users\julio\OneDrive\Documentos\TravelAgency\CRUD12_Julio_Pech\Travels.Api\Travels.ApplicationServices\obj\Debug\net8.0\Travels.ApplicationServices.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\julio\OneDrive\Documentos\TravelAgency\CRUD12_Julio_Pech\Travels.Api\Travels.ApplicationServices\obj\Debug\net8.0\Travels.ApplicationServices.AssemblyInfoInputs.cache
+C:\Users\julio\OneDrive\Documentos\TravelAgency\CRUD12_Julio_Pech\Travels.Api\Travels.ApplicationServices\obj\Debug\net8.0\Travels.ApplicationServices.AssemblyInfo.cs
+C:\Users\julio\OneDrive\Documentos\TravelAgency\CRUD12_Julio_Pech\Travels.Api\Travels.ApplicationServices\obj\Debug\net8.0\Travels.ApplicationServices.csproj.CoreCompileInputs.cache
+C:\Users\julio\OneDrive\Documentos\TravelAgency\CRUD12_Julio_Pech\Travels.Api\Travels.ApplicationServices\obj\Debug\net8.0\Travels.ApplicationServices.sourcelink.json
+C:\Users\julio\OneDrive\Documentos\TravelAgency\CRUD12_Julio_Pech\Travels.Api\Travels.ApplicationServices\obj\Debug\net8.0\Travels.ApplicationServices.dll
+C:\Users\julio\OneDrive\Documentos\TravelAgency\CRUD12_Julio_Pech\Travels.Api\Travels.ApplicationServices\obj\Debug\net8.0\refint\Travels.ApplicationServices.dll
+C:\Users\julio\OneDrive\Documentos\TravelAgency\CRUD12_Julio_Pech\Travels.Api\Travels.ApplicationServices\obj\Debug\net8.0\Travels.ApplicationServices.pdb
+C:\Users\julio\OneDrive\Documentos\TravelAgency\CRUD12_Julio_Pech\Travels.Api\Travels.ApplicationServices\obj\Debug\net8.0\ref\Travels.ApplicationServices.dll

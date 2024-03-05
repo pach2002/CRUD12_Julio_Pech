@@ -21,11 +21,19 @@ namespace Travels.Core.Journeys
         ///  HERE AND IN TICKETS TABLE
         /// </summary>
 
+        // -------------------------------------------------
+
         // Destination id
         public Destination Destination { get; set; }
+        //public int DestinationId { get; set; }
+
+        // -------------------------------------------------
 
         // Origin Id
         public Origin Origin { get; set; }
+        //public int OriginId { get; set; }
+
+        // -------------------------------------------------
 
         // Departure Date
         [Required]
