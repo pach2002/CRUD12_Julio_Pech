@@ -6,4 +6,13 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Tickets\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Travels.Core\Travels.Core.csproj" />
+    <ProjectReference Include="..\Travels.DataAccess\Travels.DataAccess.csproj" />
+  </ItemGroup>
+
 </Project>

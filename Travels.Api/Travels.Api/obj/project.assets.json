@@ -952,6 +952,10 @@
       "Travels.ApplicationServices/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Travels.Core": "1.0.0",
+          "Travels.DataAccess": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/Travels.ApplicationServices.dll": {}
         },
