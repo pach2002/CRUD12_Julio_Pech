@@ -123,3 +123,6 @@ C:\Users\julio\OneDrive\Documentos\TravelAgency\CRUD12_Julio_Pech\Travels.Api\Tr
 C:\Users\julio\OneDrive\Documentos\TravelAgency\CRUD12_Julio_Pech\Travels.Api\Travels.UnitTest\obj\Debug\net8.0\Travels.UnitTest.pdb
 C:\Users\julio\OneDrive\Documentos\TravelAgency\CRUD12_Julio_Pech\Travels.Api\Travels.UnitTest\obj\Debug\net8.0\Travels.UnitTest.genruntimeconfig.cache
 C:\Users\julio\OneDrive\Documentos\TravelAgency\CRUD12_Julio_Pech\Travels.Api\Travels.UnitTest\obj\Debug\net8.0\ref\Travels.UnitTest.dll
+C:\Users\julio\OneDrive\Documentos\TravelAgency\CRUD12_Julio_Pech\Travels.Api\Travels.UnitTest\bin\Debug\net8.0\AutoMapper.dll
+C:\Users\julio\OneDrive\Documentos\TravelAgency\CRUD12_Julio_Pech\Travels.Api\Travels.UnitTest\bin\Debug\net8.0\Travels.ApplicationServices.Shared.dll
+C:\Users\julio\OneDrive\Documentos\TravelAgency\CRUD12_Julio_Pech\Travels.Api\Travels.UnitTest\bin\Debug\net8.0\Travels.ApplicationServices.Shared.pdb

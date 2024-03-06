@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "DAuTK++9VD4g/AD80eD+u8nDsLWdkGt8bES1MtiZJo95d/uBTYteIa2XpkIGmr2DLLyx7tuSp/w5AasxPOSfkQ==",
+  "dgSpecHash": "mmTrQxCvKxET/gj65K7Xhd8fFv7UaTThojMHZ0MCWByd7J32cV7cZ32pkGVDT8kgeFfDTe81FoD7PqyZ47eq2g==",
   "success": true,
   "projectFilePath": "C:\\Users\\julio\\OneDrive\\Documentos\\TravelAgency\\CRUD12_Julio_Pech\\Travels.Api\\Travels.ApplicationServices\\Travels.ApplicationServices.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\julio\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\julio\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.2\\microsoft.entityframeworkcore.8.0.2.nupkg.sha512",
     "C:\\Users\\julio\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.2\\microsoft.entityframeworkcore.abstractions.8.0.2.nupkg.sha512",
     "C:\\Users\\julio\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\8.0.2\\microsoft.entityframeworkcore.analyzers.8.0.2.nupkg.sha512",

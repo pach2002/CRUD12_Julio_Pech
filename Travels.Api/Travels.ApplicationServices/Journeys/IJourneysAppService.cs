@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Travels.Core.Journeys;
+using Travels.Journeys.Dto;
 
 namespace Travels.ApplicationServices.Journeys
 {
@@ -14,8 +15,8 @@ namespace Travels.ApplicationServices.Journeys
         // Get All
         Task<List<Journey>> GetJourneysAsync();
 
-        // Add
-        Task<int> AddJourneyAsync(Journey journey);
+        // Add -- MODIFIED TO WORK WITH AUTOMAPPER
+        Task<int> AddJourneyAsync(JourneyDto journey);
 
         // Delete
         Task DeleteJourneyAsync(int journeyId);

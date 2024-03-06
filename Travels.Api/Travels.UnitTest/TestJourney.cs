@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.TestHost;
 using Microsoft.Extensions.DependencyInjection;
 using Travels.ApplicationServices.Journeys;
 using Travels.Core.Journeys;
+using Travels.Journeys.Dto;
 
 namespace Travels.UnitTest
 {
@@ -49,19 +50,22 @@ namespace Travels.UnitTest
         // CREATE A JOURNEY
         public async Task TestAdd()
         {
-            Journey journey = new Journey
+            JourneyDto journey = new JourneyDto
             {
                 // Id = 1, requires id?? no, is not necessary
-                
+
                 // requires a object
-                Destination = new Core.Places.Destination 
+                /*Destination = new Core.Places.Destination 
                 {
                     Id = 1,
                 },
                 Origin = new Core.Places.Origin 
                 {
                     Id = 1,
-                },
+                },*/
+
+                OriginId = 1,
+                DestinationId = 1,
 
                 Departure = DateTime.Now,
                 Arrival = DateTime.Now
@@ -91,7 +95,7 @@ namespace Travels.UnitTest
             // build a new journey
             Journey journey = new Journey
             {
-                Id = 3,
+                Id = 4,
 
                 // requires a object
                 Destination = new Core.Places.Destination

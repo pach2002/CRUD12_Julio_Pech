@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "ZhgKTo+z+mURFkfH0CyWGAfxf89vM5azo7SER9CzZbEJCtjmnOjBroja/CgOLNgT5/G2fhIHVduyvFHZT1+d2g==",
+  "dgSpecHash": "pqjFg0xYrU0NLypMWiqv0FJosW7HJWdYdMBH6IIMYgJ/67BNJiikUU7mVVaU1Yit29+vi8RlAS7JJ+GU/O0bXw==",
   "success": true,
   "projectFilePath": "C:\\Users\\julio\\OneDrive\\Documentos\\TravelAgency\\CRUD12_Julio_Pech\\Travels.Api\\Travels.Api\\Travels.Api.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\julio\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\julio\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\julio\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "C:\\Users\\julio\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.3.3\\microsoft.codeanalysis.analyzers.3.3.3.nupkg.sha512",

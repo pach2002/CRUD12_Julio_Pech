@@ -19,8 +19,8 @@ namespace Travels.DataAccess.Repositories
         public override async Task<Journey> AddAsync(Journey entity)
         {
             // recover values by id
-            var origin = await Context.Origins.FindAsync(entity.Origin.Id);
-            var destionation = await Context.Destinations.FindAsync(entity.Destination.Id);
+            var origin = await Context.Origins.FindAsync(entity.OriginId);
+            var destionation = await Context.Destinations.FindAsync(entity.DestinationId);
 
             // establish values as null
             entity.Destination = null;

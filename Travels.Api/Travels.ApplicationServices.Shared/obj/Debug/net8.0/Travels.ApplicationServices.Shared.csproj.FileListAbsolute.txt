@@ -1,0 +1,12 @@
+C:\Users\julio\OneDrive\Documentos\TravelAgency\CRUD12_Julio_Pech\Travels.Api\Travels.ApplicationServices.Shared\bin\Debug\net8.0\Travels.ApplicationServices.Shared.deps.json
+C:\Users\julio\OneDrive\Documentos\TravelAgency\CRUD12_Julio_Pech\Travels.Api\Travels.ApplicationServices.Shared\bin\Debug\net8.0\Travels.ApplicationServices.Shared.dll
+C:\Users\julio\OneDrive\Documentos\TravelAgency\CRUD12_Julio_Pech\Travels.Api\Travels.ApplicationServices.Shared\bin\Debug\net8.0\Travels.ApplicationServices.Shared.pdb
+C:\Users\julio\OneDrive\Documentos\TravelAgency\CRUD12_Julio_Pech\Travels.Api\Travels.ApplicationServices.Shared\obj\Debug\net8.0\Travels.ApplicationServices.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\julio\OneDrive\Documentos\TravelAgency\CRUD12_Julio_Pech\Travels.Api\Travels.ApplicationServices.Shared\obj\Debug\net8.0\Travels.ApplicationServices.Shared.AssemblyInfoInputs.cache
+C:\Users\julio\OneDrive\Documentos\TravelAgency\CRUD12_Julio_Pech\Travels.Api\Travels.ApplicationServices.Shared\obj\Debug\net8.0\Travels.ApplicationServices.Shared.AssemblyInfo.cs
+C:\Users\julio\OneDrive\Documentos\TravelAgency\CRUD12_Julio_Pech\Travels.Api\Travels.ApplicationServices.Shared\obj\Debug\net8.0\Travels.ApplicationServices.Shared.csproj.CoreCompileInputs.cache
+C:\Users\julio\OneDrive\Documentos\TravelAgency\CRUD12_Julio_Pech\Travels.Api\Travels.ApplicationServices.Shared\obj\Debug\net8.0\Travels.ApplicationServices.Shared.sourcelink.json
+C:\Users\julio\OneDrive\Documentos\TravelAgency\CRUD12_Julio_Pech\Travels.Api\Travels.ApplicationServices.Shared\obj\Debug\net8.0\Travels.ApplicationServices.Shared.dll
+C:\Users\julio\OneDrive\Documentos\TravelAgency\CRUD12_Julio_Pech\Travels.Api\Travels.ApplicationServices.Shared\obj\Debug\net8.0\refint\Travels.ApplicationServices.Shared.dll
+C:\Users\julio\OneDrive\Documentos\TravelAgency\CRUD12_Julio_Pech\Travels.Api\Travels.ApplicationServices.Shared\obj\Debug\net8.0\Travels.ApplicationServices.Shared.pdb
+C:\Users\julio\OneDrive\Documentos\TravelAgency\CRUD12_Julio_Pech\Travels.Api\Travels.ApplicationServices.Shared\obj\Debug\net8.0\ref\Travels.ApplicationServices.Shared.dll

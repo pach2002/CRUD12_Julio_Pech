@@ -1,4 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using AutoMapper;
+using AutoMapper.Execution;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Travels.Core.Journeys;
 using Travels.DataAccess.Repositories;
+using Travels.Journeys.Dto;
 
 namespace Travels.ApplicationServices.Journeys
 {
@@ -15,16 +18,23 @@ namespace Travels.ApplicationServices.Journeys
         // local context of repository
         private readonly IRepository<int, Journey> _repository;
 
+        // local mapper
+        private readonly IMapper _mapper;
+
         // builder, receive by injection dependency repository
-        public JourneysAppService(IRepository<int, Journey> repository)
+        public JourneysAppService(IRepository<int, Journey> repository, IMapper mapper)
         {
             _repository = repository;
+            _mapper = mapper;
         }
 
         // ADD NEW JOURNEY
-        public async Task<int> AddJourneyAsync(Journey journey)
+        public async Task<int> AddJourneyAsync(JourneyDto journey)
         {
-            await _repository.AddAsync(journey);
+            // map journey
+            var journey_mapped = _mapper.Map<Core.Journeys.Journey>(journey);
+
+            await _repository.AddAsync(journey_mapped);
 
             return journey.Id;
         }

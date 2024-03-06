@@ -25,13 +25,13 @@ namespace Travels.Core.Journeys
 
         // Destination id
         public Destination Destination { get; set; }
-        //public int DestinationId { get; set; }
+        public int DestinationId { get; set; }
 
         // -------------------------------------------------
 
         // Origin Id
         public Origin Origin { get; set; }
-        //public int OriginId { get; set; }
+        public int OriginId { get; set; }
 
         // -------------------------------------------------
 

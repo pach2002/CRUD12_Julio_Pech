@@ -24,9 +24,12 @@ builder.Services.AddTransient<ITicketsAppService, TicketsAppService>();
 builder.Services.AddTransient<IPassengersAppService, PassengersAppService>();
 
 // Repository extensions
-builder.Services.AddTransient<IRepository<int, Journey>, JourneysRepository>();
-builder.Services.AddTransient<IRepository<int, Ticket>, TicketsRepository>();
-builder.Services.AddTransient<IRepository<int, Passenger>, PassengersRepository>();
+builder.Services.AddTransient<IRepository<int, Travels.Core.Journeys.Journey>, JourneysRepository>();
+builder.Services.AddTransient<IRepository<int, Travels.Core.Journeys.Ticket>, TicketsRepository>();
+builder.Services.AddTransient<IRepository<int, Travels.Core.Journeys.Passenger>, PassengersRepository>();
+
+// ADD AUTOMAPPER
+builder.Services.AddAutoMapper(typeof(Travels.ApplicationServices.MapperProfile));
 
 // get connection string from environmnet variable
 var connectionString = builder.Configuration.GetConnectionString("Default");

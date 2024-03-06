@@ -51,15 +51,15 @@ namespace Travels.UnitTest
             services.AddTransient<IPassengersAppService, PassengersAppService>();
 
             // Repository extensions
-            services.AddTransient<IRepository<int, Journey>, JourneysRepository>();
-            services.AddTransient<IRepository<int, Ticket>, TicketsRepository>();
-            services.AddTransient<IRepository<int, Passenger>, PassengersRepository>();
-                
+            services.AddTransient<IRepository<int, Travels.Core.Journeys.Journey>, JourneysRepository>();
+            services.AddTransient<IRepository<int, Travels.Core.Journeys.Ticket>, TicketsRepository>();
+            services.AddTransient<IRepository<int, Travels.Core.Journeys.Passenger>, PassengersRepository>();
+
             // MODIFIED BY AUTOMAPPER
             //services.AddTransient<IRepository<int, GymManager.Core.Members.Member>, MembersRepository>();
 
             // ADD AUTOMAPPER
-            //services.AddAutoMapper(typeof(GymManager.ApplicationServices.MapperProfile));
+            services.AddAutoMapper(typeof(Travels.ApplicationServices.MapperProfile));
 
         }
 
