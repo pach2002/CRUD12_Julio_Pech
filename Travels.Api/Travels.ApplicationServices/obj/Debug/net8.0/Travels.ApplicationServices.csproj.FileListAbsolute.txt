@@ -10,3 +10,9 @@ C:\Users\julio\OneDrive\Documentos\TravelAgency\CRUD12_Julio_Pech\Travels.Api\Tr
 C:\Users\julio\OneDrive\Documentos\TravelAgency\CRUD12_Julio_Pech\Travels.Api\Travels.ApplicationServices\obj\Debug\net8.0\refint\Travels.ApplicationServices.dll
 C:\Users\julio\OneDrive\Documentos\TravelAgency\CRUD12_Julio_Pech\Travels.Api\Travels.ApplicationServices\obj\Debug\net8.0\Travels.ApplicationServices.pdb
 C:\Users\julio\OneDrive\Documentos\TravelAgency\CRUD12_Julio_Pech\Travels.Api\Travels.ApplicationServices\obj\Debug\net8.0\ref\Travels.ApplicationServices.dll
+C:\Users\julio\OneDrive\Documentos\TravelAgency\CRUD12_Julio_Pech\Travels.Api\Travels.ApplicationServices\obj\Debug\net8.0\Travels.ApplicationServices.csproj.AssemblyReference.cache
+C:\Users\julio\OneDrive\Documentos\TravelAgency\CRUD12_Julio_Pech\Travels.Api\Travels.ApplicationServices\bin\Debug\net8.0\Travels.Core.dll
+C:\Users\julio\OneDrive\Documentos\TravelAgency\CRUD12_Julio_Pech\Travels.Api\Travels.ApplicationServices\bin\Debug\net8.0\Travels.DataAccess.dll
+C:\Users\julio\OneDrive\Documentos\TravelAgency\CRUD12_Julio_Pech\Travels.Api\Travels.ApplicationServices\bin\Debug\net8.0\Travels.Core.pdb
+C:\Users\julio\OneDrive\Documentos\TravelAgency\CRUD12_Julio_Pech\Travels.Api\Travels.ApplicationServices\bin\Debug\net8.0\Travels.DataAccess.pdb
+C:\Users\julio\OneDrive\Documentos\TravelAgency\CRUD12_Julio_Pech\Travels.Api\Travels.ApplicationServices\obj\Debug\net8.0\Travels.ApplicationServices.csproj.CopyComplete

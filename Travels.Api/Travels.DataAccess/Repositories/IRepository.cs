@@ -26,3 +26,4 @@ namespace Travels.DataAccess.Repositories
         Task DeleteAsync(TId id);
 
     }
+}

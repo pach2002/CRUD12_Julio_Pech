@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34408.163
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Travels.Api", "Travels.Api\Travels.Api.csproj", "{9C4259A6-4590-4F2D-9136-F88D8D1EC941}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Travels.Api", "Travels.Api\Travels.Api.csproj", "{9C4259A6-4590-4F2D-9136-F88D8D1EC941}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Travels.DataAccess", "Travels.DataAccess\Travels.DataAccess.csproj", "{9263D61C-20C0-4991-8F06-FF4DB6A7C4A3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Travels.DataAccess", "Travels.DataAccess\Travels.DataAccess.csproj", "{9263D61C-20C0-4991-8F06-FF4DB6A7C4A3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Travels.Core", "Travels.Core\Travels.Core.csproj", "{37C1A3A0-E8B5-4413-B8BE-97C1F136E851}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Travels.Core", "Travels.Core\Travels.Core.csproj", "{37C1A3A0-E8B5-4413-B8BE-97C1F136E851}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Travels.ApplicationServices", "Travels.ApplicationServices\Travels.ApplicationServices.csproj", "{4E8E106C-5001-446A-A758-35C8764D7A87}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Travels.ApplicationServices", "Travels.ApplicationServices\Travels.ApplicationServices.csproj", "{4E8E106C-5001-446A-A758-35C8764D7A87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Travels.UnitTest", "Travels.UnitTest\Travels.UnitTest.csproj", "{43C4F4A1-DFB4-4A9C-869C-9B7AB58C7062}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{4E8E106C-5001-446A-A758-35C8764D7A87}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4E8E106C-5001-446A-A758-35C8764D7A87}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4E8E106C-5001-446A-A758-35C8764D7A87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43C4F4A1-DFB4-4A9C-869C-9B7AB58C7062}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43C4F4A1-DFB4-4A9C-869C-9B7AB58C7062}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43C4F4A1-DFB4-4A9C-869C-9B7AB58C7062}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43C4F4A1-DFB4-4A9C-869C-9B7AB58C7062}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

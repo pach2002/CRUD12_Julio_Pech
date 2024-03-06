@@ -1,5 +1,10 @@
 using Microsoft.EntityFrameworkCore;
+using Travels.ApplicationServices.Journeys;
+using Travels.ApplicationServices.Passengers;
+using Travels.ApplicationServices.Tickets;
+using Travels.Core.Journeys;
 using Travels.DataAccess;
+using Travels.DataAccess.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,6 +14,19 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+
+// --- register dependecies for project
+
+// Access methods
+builder.Services.AddTransient<IJourneysAppService, JourneysAppService>();
+builder.Services.AddTransient<ITicketsAppService, TicketsAppService>();
+builder.Services.AddTransient<IPassengersAppService, PassengersAppService>();
+
+// Repository extensions
+builder.Services.AddTransient<IRepository<int, Journey>, JourneysRepository>();
+builder.Services.AddTransient<IRepository<int, Ticket>, TicketsRepository>();
+builder.Services.AddTransient<IRepository<int, Passenger>, PassengersRepository>();
 
 // get connection string from environmnet variable
 var connectionString = builder.Configuration.GetConnectionString("Default");
