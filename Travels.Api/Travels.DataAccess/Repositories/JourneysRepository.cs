@@ -63,9 +63,16 @@ namespace Travels.DataAccess.Repositories
         // override get method to find Origin and Destination Values
         public override async Task<Journey> GetAsync(int id)
         {
+            // select all values, no include Origin and Destination
             var journey = await Context.Journeys
-                .Include(x => x.Origin)
-                .Include(x => x.Destination)
+                 .Select(j => new Journey
+                 {
+                     Id = j.Id,
+                     OriginId = j.OriginId,
+                     DestinationId = j.DestinationId,
+                     Arrival = j.Arrival,
+                     Departure = j.Departure
+                 })
                 .FirstOrDefaultAsync(x => x.Id == id);
 
             // return register with all values
@@ -76,10 +83,16 @@ namespace Travels.DataAccess.Repositories
         // override get all method to find Origin and Destination Values for every row
         public override IQueryable<Journey> GetAll()
         {
-            // cross data with Origin and Destination Tables
+            // Select all values, no Origin and Destination Object
             return Context.Set<Journey>()
-                .Include(x => x.Origin)
-                .Include(x => x.Destination);
+                    .Select(j => new Journey
+                    {
+                        Id = j.Id,
+                        OriginId = j.OriginId,
+                        DestinationId = j.DestinationId,
+                        Arrival = j.Arrival,
+                        Departure = j.Departure
+                    });
         }
     }
 }

@@ -1,16 +1,18 @@
 using Microsoft.EntityFrameworkCore;
+using System.Text.Json.Serialization;
 using Travels.ApplicationServices.Journeys;
 using Travels.ApplicationServices.Passengers;
 using Travels.ApplicationServices.Tickets;
-using Travels.Core.Journeys;
 using Travels.DataAccess;
 using Travels.DataAccess.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+// Solve api call ignoring cycles
+builder.Services.AddControllers().AddNewtonsoftJson(x =>
+ x.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
 
-builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

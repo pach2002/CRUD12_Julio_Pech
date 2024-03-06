@@ -32,11 +32,13 @@ namespace Travels.ApplicationServices.Journeys
         public async Task<int> AddJourneyAsync(JourneyDto journey)
         {
             // map journey
-            var journey_mapped = _mapper.Map<Core.Journeys.Journey>(journey);
+            var journeyMapped = _mapper.Map<Core.Journeys.Journey>(journey);
 
-            await _repository.AddAsync(journey_mapped);
+            // recover journey saved
+            Journey journeySaved = await _repository.AddAsync(journeyMapped);
 
-            return journey.Id;
+            // return id to controller
+            return journeySaved.Id;
         }
 
         // DELETE A JOURNEY
