@@ -39,7 +39,7 @@ namespace Travels.UnitTest
         public async Task TestGetById()
         {
             // test Get a journey
-            Journey journey = await repository.GetJourneyAsync(1);
+            Journey journey = await repository.GetJourneyAsync(3);
 
             Assert.Pass();
         }
@@ -78,35 +78,37 @@ namespace Travels.UnitTest
         public async Task TestDelete()
         {
             // test delete
-            await repository.DeleteJourneyAsync(2);
+            await repository.DeleteJourneyAsync(3);
 
             Assert.Pass();
         }
 
         [Test]
         // UPDATE A JOURNEY
-        // TODO: NOT FINISHED
         public async Task TestUpdate()
         {
             // requires id
             // build a new journey
             Journey journey = new Journey
             {
-                Id = 1,
+                Id = 3,
 
                 // requires a object
                 Destination = new Core.Places.Destination
                 {
-                    Id = 1,
+                    Id = 2,
                 },
                 Origin = new Core.Places.Origin
                 {
-                    Id = 1,
+                    Id = 2,
                 },
 
                 Departure = DateTime.Now,
                 Arrival = DateTime.Now
             };
+
+            // test update a journey
+            await repository.EditJourneyAsync(journey);
 
             Assert.Pass();
         }
