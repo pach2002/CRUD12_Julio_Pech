@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Travels.Core.Journeys;
+using Travels.Journeys.Dto;
 
 namespace Travels.ApplicationServices.Passengers
 {
@@ -15,7 +16,7 @@ namespace Travels.ApplicationServices.Passengers
         Task<List<Passenger>> GetPassengersAsync();
 
         // Add
-        Task<int> AddPassengerAsync(Passenger passenger);
+        Task<int> AddPassengerAsync(PassengerDto passenger);
 
         // Delete
         Task DeletePassengerAsync(int PassengerId);

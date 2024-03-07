@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using AutoMapper;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Travels.Core.Journeys;
 using Travels.DataAccess.Repositories;
+using Travels.Journeys.Dto;
 
 namespace Travels.ApplicationServices.Passengers
 {
@@ -15,18 +17,28 @@ namespace Travels.ApplicationServices.Passengers
         // local context of repository
         private readonly IRepository<int, Passenger> _repository;
 
+        // local mapper
+        private readonly IMapper _mapper;
+
         // builder, receive by injection dependency repository
-        public PassengersAppService(IRepository<int, Passenger> repository)
+        public PassengersAppService(IRepository<int, Passenger> repository, IMapper mapper)
         {
+            // injection dependency of mapper
             _repository = repository;
+            _mapper = mapper;
         }
 
         // ADD NEW PASSENGER
-        public async Task<int> AddPassengerAsync(Passenger passenger)
+        public async Task<int> AddPassengerAsync(PassengerDto passenger)
         {
-            await _repository.AddAsync(passenger);
+            // map passenger
+            var passengerMapped = _mapper.Map<Core.Journeys.Passenger>(passenger);
 
-            return passenger.Id;
+            // recover passenger saved
+            Passenger passengerSaved = await _repository.AddAsync(passengerMapped);
+
+            // return id
+            return passengerSaved.Id;
         }
 
         // DELETE PASSENGER
