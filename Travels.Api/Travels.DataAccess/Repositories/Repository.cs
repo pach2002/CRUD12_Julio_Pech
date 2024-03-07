@@ -45,9 +45,11 @@ namespace Travels.DataAccess.Repositories
         // delete
         public virtual async Task DeleteAsync(TId id)
         {
-            var entity = await _context.FindAsync<TEntity>(id);
+            // var know = _context.Database.CanConnect;
+            // remove async features
+            var entity = _context.Find<TEntity>(id);
             _context.Remove<TEntity>(entity);
-            await _context.SaveChangesAsync();
+            _context.SaveChanges();
 
         }
 

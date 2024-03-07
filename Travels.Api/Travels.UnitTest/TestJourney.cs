@@ -95,17 +95,20 @@ namespace Travels.UnitTest
             // build a new journey
             Journey journey = new Journey
             {
-                Id = 4,
+                Id = 7,
 
                 // requires a object
-                Destination = new Core.Places.Destination
+                /*Destination = new Core.Places.Destination
                 {
                     Id = 2,
                 },
                 Origin = new Core.Places.Origin
                 {
                     Id = 2,
-                },
+                },*/
+
+                OriginId = 2,
+                DestinationId = 2,
 
                 Departure = DateTime.Now,
                 Arrival = DateTime.Now

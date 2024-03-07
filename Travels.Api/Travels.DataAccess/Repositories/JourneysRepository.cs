@@ -41,8 +41,9 @@ namespace Travels.DataAccess.Repositories
         public override async Task<Journey> UpdateAsync(Journey entity)
         {
             // recover values by id
-            var origin = await Context.Origins.FindAsync(entity.Origin.Id);
-            var destionation = await Context.Destinations.FindAsync(entity.Destination.Id);
+            // added as no tracking to solve problem with async method
+            var origin = await Context.Origins.AsNoTracking().FirstOrDefaultAsync(o => o.Id == entity.OriginId);
+            var destination = await Context.Destinations.AsNoTracking().FirstOrDefaultAsync(o => o.Id == entity.DestinationId);
 
             // establish values as null
             entity.Destination = null;
@@ -51,7 +52,7 @@ namespace Travels.DataAccess.Repositories
             // add changes to database
             Context.Journeys.Update(entity);
             origin.Journeys.Add(entity);
-            destionation.Journeys.Add(entity);
+            destination.Journeys.Add(entity);
 
             // save changes
             await Context.SaveChangesAsync();

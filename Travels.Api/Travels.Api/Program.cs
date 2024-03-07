@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Text.Json.Serialization;
 using Travels.ApplicationServices.Journeys;
@@ -41,6 +42,12 @@ builder.Services.AddDbContext<TravelsDataContext>(options =>
      options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString))
      );
 
+// configuration to set objects in api call as not required
+builder.Services.Configure<ApiBehaviorOptions>(options =>
+{
+    // now, send object in json is not required
+    options.SuppressModelStateInvalidFilter = true;
+});
 
 var app = builder.Build();
 

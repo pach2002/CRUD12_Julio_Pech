@@ -59,14 +59,31 @@ namespace Travels.Api.Controllers
 
         // PUT api/<JourneyController>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public async Task<IActionResult> Put(int id, [FromBody] Journey journey)
         {
+            // TODO: put working on, check for errors
+
+            // save id into Journey object
+            journey.Id = id;
+
+            // edit journey by id
+            await _journeysAppService.EditJourneyAsync(journey);
+
+            // if was successful, return 200 status
+            return Ok();
+            
         }
 
         // DELETE api/<JourneyController>/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public async Task<IActionResult> Delete(int id)
         {
+            // delete working on !!
+            await _journeysAppService.DeleteJourneyAsync(id);
+
+            // if was successful, return 200 status
+            return Ok();
+
         }
     }
 }
