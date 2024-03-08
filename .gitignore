@@ -1,14 +1,15 @@
 
-.vs/
 
-*.suo
+Travels.Api/.vs/*
+Travels.Api/Travels.Api/bin/*
+Travels.Api/Travels.Api/obj/*
+Travels.Api/Travels.ApplicationServices/bin/*
+Travels.Api/Travels.ApplicationServices/obj/*
+Travels.Api/Travels.DataAccess/bin/*
+Travels.Api/Travels.DataAccess/obj/*
+Travels.Api/Travels.ApplicationServices.Shared/bin/*
+Travels.Api/Travels.ApplicationServices.Shared/obj/*
+Travels.Api/Travels.UnitTest/obj/*
+Travels.Api/Travels.UnitTest/bin/*
 
-**/obj/
-**/.AssemblyInfo.cs
-**/.AssemblyInfoInputs.cache
-**/.csproj.AssemblyReference.cache
 
-.vs/ProjectEvaluation/*.metadata.v7.bin
-.vs/ProjectEvaluation/*.projects.v7.bin
-
-.vs/Travels.Api/DesignTimeBuild/.dtbcache.v2
