@@ -1,0 +1,14 @@
+
+.vs/
+
+*.suo
+
+**/obj/
+**/.AssemblyInfo.cs
+**/.AssemblyInfoInputs.cache
+**/.csproj.AssemblyReference.cache
+
+.vs/ProjectEvaluation/*.metadata.v7.bin
+.vs/ProjectEvaluation/*.projects.v7.bin
+
+.vs/Travels.Api/DesignTimeBuild/.dtbcache.v2
