@@ -38,7 +38,7 @@ namespace Travels.DataAccess.Repositories
         }
 
         // override method to save changes on Destionation and Origin
-        public override async Task<Journey> UpdateAsync(Journey entity)
+        /*public override async Task<Journey> UpdateAsync(Journey entity)
         {
             // recover values by id
             // added as no tracking to solve problem with async method
@@ -58,11 +58,11 @@ namespace Travels.DataAccess.Repositories
             await Context.SaveChangesAsync();
 
             return entity;
-        }
+        }*/
 
 
         // override get method to find Origin and Destination Values
-        public override async Task<Journey> GetAsync(int id)
+        /*public override async Task<Journey> GetAsync(int id)
         {
             // select all values, no include Origin and Destination
             var journey = await Context.Journeys
@@ -94,6 +94,6 @@ namespace Travels.DataAccess.Repositories
                         Arrival = j.Arrival,
                         Departure = j.Departure
                     });
-        }
+        }*/
     }
 }

@@ -95,7 +95,7 @@ namespace Travels.UnitTest
             // build a new journey
             Journey journey = new Journey
             {
-                Id = 7,
+                Id = 6,
 
                 // requires a object
                 /*Destination = new Core.Places.Destination

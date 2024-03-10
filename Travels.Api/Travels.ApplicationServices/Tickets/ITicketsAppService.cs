@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Travels.Core.Journeys;
+using Travels.Journeys.Dto;
 
 namespace Travels.ApplicationServices.Tickets
 {
@@ -15,7 +16,7 @@ namespace Travels.ApplicationServices.Tickets
         Task<List<Ticket>> GetTicketsAsync();
 
         // Add
-        Task<int> AddTicketAsync(Ticket ticket);
+        Task<int> AddTicketAsync(TicketDto ticket);
 
         // Delete
         Task DeleteTicketAsync(int ticketId);

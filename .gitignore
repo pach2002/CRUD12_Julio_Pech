@@ -1,6 +1,8 @@
 
 
 Travels.Api/.vs/*
+Travels.Api/.vs/Travels.Api/*
+Travels.Api/.vs/ProjectEvaluation/*
 Travels.Api/Travels.Api/bin/*
 Travels.Api/Travels.Api/obj/*
 Travels.Api/Travels.ApplicationServices/bin/*

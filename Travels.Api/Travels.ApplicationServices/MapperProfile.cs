@@ -20,6 +20,10 @@ namespace Travels.ApplicationServices
             // map of passengersDto
             CreateMap<Core.Journeys.Passenger, Travels.Journeys.Dto.PassengerDto>();
             CreateMap<Travels.Journeys.Dto.PassengerDto, Core.Journeys.Passenger>();
+
+            // map of Ticket
+            CreateMap<Core.Journeys.Ticket, Travels.Journeys.Dto.TicketDto>();
+            CreateMap<Travels.Journeys.Dto.TicketDto, Core.Journeys.Ticket>();
         }
     }
 }

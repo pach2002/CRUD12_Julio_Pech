@@ -14,7 +14,7 @@ namespace Travels.Api.Controllers
     public class JourneyController : ControllerBase
     {
         // local 
-        private IJourneysAppService _journeysAppService;
+        private readonly IJourneysAppService _journeysAppService;
 
         // injection dependency
         public JourneyController(IJourneysAppService journeysAppService) 

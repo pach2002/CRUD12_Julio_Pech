@@ -12,6 +12,29 @@ namespace Travels.DataAccess.Repositories
         // builder
         public TicketsRepository(TravelsDataContext context) : base(context)
         {
+
+        }
+
+        // add override
+        public override async Task<Ticket> AddAsync(Ticket entity)
+        {
+            // recover values by id
+            var journey = await Context.Journeys.FindAsync(entity.JourneyId);
+            var passenger = await Context.Passengers.FindAsync(entity.PassengerId);
+
+            // establish values as null
+            entity.Journey = null;
+            entity.Passenger = null;
+
+            // add to database
+            await Context.Tickets.AddAsync(entity);
+            journey.Tickets.Add(entity);
+            passenger.Tickets.Add(entity);
+
+            // save changes
+            await Context.SaveChangesAsync();
+
+            return entity;
         }
     }
 }

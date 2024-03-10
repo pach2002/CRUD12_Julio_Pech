@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using AutoMapper;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Travels.Core.Journeys;
 using Travels.DataAccess.Repositories;
+using Travels.Journeys.Dto;
 
 namespace Travels.ApplicationServices.Tickets
 {
@@ -15,18 +17,28 @@ namespace Travels.ApplicationServices.Tickets
         // local context of repository
         private readonly IRepository<int, Ticket> _repository;
 
-        // builder, receive by injection dependency repository
-        public TicketsAppService(IRepository<int, Ticket> repository)
+        // local mapper
+        private readonly IMapper _mapper;
+
+        // builder, receive by injection dependency repository and mapper
+        public TicketsAppService(IRepository<int, Ticket> repository, IMapper mapper)
         {
             _repository = repository;
+            _mapper = mapper;
         }
 
         // ADD NEW TICKET
-        public async Task<int> AddTicketAsync(Ticket ticket)
+        public async Task<int> AddTicketAsync(TicketDto ticket)
         {
-            await _repository.AddAsync(ticket);
+            // map ticket with dto
+            var ticketMapped = _mapper.Map<Core.Journeys.Ticket>(ticket);
 
-            return ticket.Id;
+            // recover ticket saved
+            Ticket ticketSaved = await _repository.AddAsync(ticketMapped);
+
+            //await _repository.AddAsync(ticketSaved);
+
+            return ticketSaved.Id;
         }
 
         // DELETE TICKET
