@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Serilog;
 using Travels.ApplicationServices.Passengers;
 using Travels.Core.Journeys;
 using Travels.Journeys.Dto;
@@ -24,6 +25,9 @@ namespace Travels.Api.Controllers
         [HttpGet]
         public async Task<IEnumerable<Passenger>> Get()
         {
+            // Log action ?
+            Log.Information("Running Method: Get All Passengers");
+
             // list of passengers
             List<Passenger> passengers = await _passengersAppService.GetPassengersAsync();
         
@@ -35,6 +39,9 @@ namespace Travels.Api.Controllers
         [HttpGet("{id}")]
         public async Task<Passenger> Get(int id)
         {
+            // Log action 
+            Log.Information("Running Method: Get Passenger");
+
             // search a passenger
             Passenger passenger = await _passengersAppService.GetPassengerAsync(id);
 
@@ -47,6 +54,9 @@ namespace Travels.Api.Controllers
         [HttpPost]
         public async Task<int> Post([FromBody] PassengerDto passenger)
         {
+            // log action
+            Log.Information("Running Method: Create New Passenger");
+
             // send body value (PassengerDto) and save id from new row
             int id = await _passengersAppService.AddPassengerAsync(passenger);
 
@@ -58,6 +68,10 @@ namespace Travels.Api.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> Put(int id, [FromBody] Passenger passenger)
         {
+
+            // log action
+            Log.Information("Running Method: Edit Passenger");
+
             // save id into passenger
             passenger.Id = id;
 
@@ -72,6 +86,9 @@ namespace Travels.Api.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
+            // log action
+            Log.Information("Running Method: Delete Passenger");
+
             // delete by id
             await _passengersAppService.DeletePassengerAsync(id);
 

@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Serilog;
 using System.Text.Json.Serialization;
 using Travels.ApplicationServices.Journeys;
 using Travels.ApplicationServices.Passengers;
@@ -8,6 +9,23 @@ using Travels.DataAccess;
 using Travels.DataAccess.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
+
+
+
+// before start project, create logger
+Log.Logger = new LoggerConfiguration()
+    .WriteTo.Console() // Write all in console/
+    .CreateBootstrapLogger();
+
+// add serilog
+builder.Host
+    .UseSerilog(
+    (context, services, configuration) => configuration
+    .ReadFrom.Configuration(context.Configuration)
+    .ReadFrom.Services(services)
+    .Enrich.FromLogContext()
+    .WriteTo.Console()
+    );
 
 // Add services to the container.
 // Solve api call ignoring cycles
