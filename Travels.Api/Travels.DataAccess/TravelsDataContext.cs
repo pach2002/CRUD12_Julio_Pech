@@ -25,7 +25,7 @@ namespace Travels.DataAccess
         public virtual DbSet<Origin> Origins { get; set; }
  
         // builder
-        public TravelsDataContext(DbContextOptions options) : base(options) 
+        public TravelsDataContext(DbContextOptions<TravelsDataContext> options) : base(options) 
         {
 
         }

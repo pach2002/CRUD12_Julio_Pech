@@ -19,4 +19,8 @@
     <ProjectReference Include="..\Travels.Core\Travels.Core.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Migrations\" />
+  </ItemGroup>
+
 </Project>

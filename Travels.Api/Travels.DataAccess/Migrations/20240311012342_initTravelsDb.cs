@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Travels.DataAccess.Migrations
 {
     /// <inheritdoc />
-    public partial class inittravelsdb : Migration
+    public partial class initTravelsDb : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

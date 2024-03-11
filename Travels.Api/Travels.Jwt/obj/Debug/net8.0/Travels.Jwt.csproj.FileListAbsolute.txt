@@ -1,0 +1,15 @@
+C:\Users\julio\OneDrive\Documentos\TravelAgency\CRUD12_Julio_Pech\Travels.Api\Travels.Jwt\obj\Debug\net8.0\Travels.Jwt.csproj.AssemblyReference.cache
+C:\Users\julio\OneDrive\Documentos\TravelAgency\CRUD12_Julio_Pech\Travels.Api\Travels.Jwt\obj\Debug\net8.0\Travels.Jwt.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\julio\OneDrive\Documentos\TravelAgency\CRUD12_Julio_Pech\Travels.Api\Travels.Jwt\obj\Debug\net8.0\Travels.Jwt.AssemblyInfoInputs.cache
+C:\Users\julio\OneDrive\Documentos\TravelAgency\CRUD12_Julio_Pech\Travels.Api\Travels.Jwt\obj\Debug\net8.0\Travels.Jwt.AssemblyInfo.cs
+C:\Users\julio\OneDrive\Documentos\TravelAgency\CRUD12_Julio_Pech\Travels.Api\Travels.Jwt\obj\Debug\net8.0\Travels.Jwt.csproj.CoreCompileInputs.cache
+C:\Users\julio\OneDrive\Documentos\TravelAgency\CRUD12_Julio_Pech\Travels.Api\Travels.Jwt\obj\Debug\net8.0\Travels.Jwt.sourcelink.json
+C:\Users\julio\OneDrive\Documentos\TravelAgency\CRUD12_Julio_Pech\Travels.Api\Travels.Jwt\bin\Debug\net8.0\Travels.Jwt.deps.json
+C:\Users\julio\OneDrive\Documentos\TravelAgency\CRUD12_Julio_Pech\Travels.Api\Travels.Jwt\bin\Debug\net8.0\Travels.Jwt.runtimeconfig.json
+C:\Users\julio\OneDrive\Documentos\TravelAgency\CRUD12_Julio_Pech\Travels.Api\Travels.Jwt\bin\Debug\net8.0\Travels.Jwt.dll
+C:\Users\julio\OneDrive\Documentos\TravelAgency\CRUD12_Julio_Pech\Travels.Api\Travels.Jwt\bin\Debug\net8.0\Travels.Jwt.pdb
+C:\Users\julio\OneDrive\Documentos\TravelAgency\CRUD12_Julio_Pech\Travels.Api\Travels.Jwt\obj\Debug\net8.0\Travels.Jwt.dll
+C:\Users\julio\OneDrive\Documentos\TravelAgency\CRUD12_Julio_Pech\Travels.Api\Travels.Jwt\obj\Debug\net8.0\refint\Travels.Jwt.dll
+C:\Users\julio\OneDrive\Documentos\TravelAgency\CRUD12_Julio_Pech\Travels.Api\Travels.Jwt\obj\Debug\net8.0\Travels.Jwt.pdb
+C:\Users\julio\OneDrive\Documentos\TravelAgency\CRUD12_Julio_Pech\Travels.Api\Travels.Jwt\obj\Debug\net8.0\Travels.Jwt.genruntimeconfig.cache
+C:\Users\julio\OneDrive\Documentos\TravelAgency\CRUD12_Julio_Pech\Travels.Api\Travels.Jwt\obj\Debug\net8.0\ref\Travels.Jwt.dll

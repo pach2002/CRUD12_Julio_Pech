@@ -12,8 +12,8 @@ using Travels.DataAccess;
 namespace Travels.DataAccess.Migrations
 {
     [DbContext(typeof(TravelsDataContext))]
-    [Migration("20240305164030_init-travelsdb")]
-    partial class inittravelsdb
+    [Migration("20240311012342_initTravelsDb")]
+    partial class initTravelsDb
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

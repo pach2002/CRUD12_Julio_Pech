@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Travels.ApplicationServices.Tickets;
 using Travels.Core.Journeys;
 using Travels.Journeys.Dto;
@@ -7,6 +8,7 @@ using Travels.Journeys.Dto;
 
 namespace Travels.Api.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class TicketsController : ControllerBase
