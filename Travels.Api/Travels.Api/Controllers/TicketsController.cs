@@ -46,12 +46,27 @@ namespace Travels.Api.Controllers
         public async Task<int> Post([FromBody] TicketDto ticket)
         {
 
-            // send body 
-            int id = await _ticketsAppService.AddTicketAsync(ticket);
+            // before to send info, check if Passenger and Journey exists on database
+            // using HttpClient
+            Checkers.Checkers checkers = new Checkers.Checkers();
 
-            // return id
-            return id;
+            // recover if exists
+            var journeyChecked = await checkers.IsJourneyChecked(ticket.JourneyId);
+            var passengerChecked = await checkers.IsPassengerChecked(ticket.PassengerId);
 
+            // if JourneyId and PassengerId exists, continue, in other case, cancel process
+            if (journeyChecked && passengerChecked) 
+            {
+                // send body 
+                int id = await _ticketsAppService.AddTicketAsync(ticket);
+
+                // return id
+                return id;
+
+            }
+                
+            // return 0 if it doesn't work    
+            return 0;
         }
 
 
