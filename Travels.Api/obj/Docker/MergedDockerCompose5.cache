@@ -1,0 +1,57 @@
+name: dockercompose13243466776656029076
+services:
+  travels.api:
+    build:
+      context: C:\Users\julio\OneDrive\Documentos\TravelAgency\CRUD12_Julio_Pech\Travels.Api
+      dockerfile: Travels.Api/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_HTTP_PORTS: "8080"
+      ASPNETCORE_HTTPS_PORTS: "8081"
+    image: travelsapi
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 8080
+        protocol: tcp
+      - mode: ingress
+        target: 8081
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: C:\Users\julio\AppData\Roaming/Microsoft/UserSecrets
+        target: /home/app/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\julio\AppData\Roaming/ASP.NET/Https
+        target: /home/app/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+  travels.mysql:
+    container_name: travels.mysql
+    environment:
+      MYSQL_DATABASE: travels
+      MYSQL_ROOT_PASSWORD: "123456"
+    image: mysql:8.0.36-oracle
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 3306
+        published: "18004"
+        protocol: tcp
+    volumes:
+      - type: volume
+        source: registers
+        target: /data/db
+        volume: {}
+networks:
+  default:
+    name: dockercompose13243466776656029076_default
+volumes:
+  registers:
+    name: dockercompose13243466776656029076_registers

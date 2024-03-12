@@ -1,0 +1,23 @@
+version: '3.4'
+
+services:
+  travels.api:
+    image: ${DOCKER_REGISTRY-}travelsapi
+    build:
+      context: .
+      dockerfile: Travels.Api/Dockerfile
+  
+  travels.mysql:
+    container_name: travels.mysql
+    image: mysql:8.0.36-oracle
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456
+      MYSQL_DATABASE: travels
+    ports:
+      - "18004:3306"
+    volumes:
+      - registers:/data/db
+
+
+volumes:
+    registers:    

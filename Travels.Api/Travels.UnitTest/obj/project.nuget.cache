@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "PQ093se7Ee1CiLZSYWX2Saw46nI/pwcZo2jSLM2BKq4/4isTNGbsp6vHoCbzUXNPQA3NPDNuJOK33zRhrPhJjA==",
+  "dgSpecHash": "5RaZa0cnO9lkx7pBLWkoNu1qUjTsNO+vXyM6p6/4BI+BGyS8jFf0ViuEWzbP4s4HV15xLNV/QI1ZYQXHKj+K8Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\julio\\OneDrive\\Documentos\\TravelAgency\\CRUD12_Julio_Pech\\Travels.Api\\Travels.UnitTest\\Travels.UnitTest.csproj",
   "expectedPackageFiles": [
@@ -53,6 +53,7 @@
     "C:\\Users\\julio\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\julio\\.nuget\\packages\\microsoft.testplatform.objectmodel\\17.6.0\\microsoft.testplatform.objectmodel.17.6.0.nupkg.sha512",
     "C:\\Users\\julio\\.nuget\\packages\\microsoft.testplatform.testhost\\17.6.0\\microsoft.testplatform.testhost.17.6.0.nupkg.sha512",
+    "C:\\Users\\julio\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.5\\microsoft.visualstudio.azure.containers.tools.targets.1.19.5.nupkg.sha512",
     "C:\\Users\\julio\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\julio\\.nuget\\packages\\mysql.data\\8.0.33\\mysql.data.8.0.33.nupkg.sha512",
     "C:\\Users\\julio\\.nuget\\packages\\mysqlconnector\\2.3.5\\mysqlconnector.2.3.5.nupkg.sha512",
